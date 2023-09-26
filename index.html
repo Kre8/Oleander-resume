@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>ISO_GAL_clone</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="allow"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+
+
+
+<!--lilt-->
+<style>
+.tilt-container {
+display: inline-block;
+perspective: 1000px; 
+pointer-events: none;
+}
+</style>
+
+
+
+
+<!--MEDIAQ-->  
+<style>
+@media screen and (min-height: 200px) {
+
+.rex2{
+background-color: rgb(112, 85, 248);
+}
+.rex2::after{
+content:'min-height:200px';
+}
+.resume{
+margin-top:-12vh;margin-left:2vw;width:95vw;
+height:300px;
+}
+.resume2{
+height:80vh;
+width:30vw;
+margin-top:4vh;margin-left:60%;background-size: 100% 80%;
+transform: scaleY(1.8) translateY(-2%);
+}
+
+}
+@media screen and (min-height: 450px) {
+.rex2{
+background-color: rgb(224, 248, 85);
+}
+.rex2::after{
+content:'min-height:450px';
+}
+.resume{
+margin-top:22vh;
+margin-left:2vw;
+width:75vw;
+height:70vh;
+transform: scaleY(1) translateY(-40%)!important;
+background-size: 80% 60%;
+background-position: 0px 190%;
+}
+.resume2{
+height:80vh;
+width:30vw;
+margin-top:4vh;margin-left:60%;background-size: 100% 80%;
+transform: scaleY(1.8) translateY(-2%);
+}
+
+}
+
+@media screen and (min-height: 600px) {
+.rex2{
+background-color: rgb(11, 111, 16);
+}
+.rex2::after{
+content:'min-height:600px';
+}
+.resume{
+margin-top:22vh;
+margin-left:2vw;
+width:75vw;
+height:70vh;
+transform: scaleY(1) translateY(-40%)!important;
+background-size: 80% 60%;
+background-position: 0px 190%;
+}
+.resume2{
+height:60vh;
+width:30vw;
+margin-top:40vh;margin-left:60%;background-size: 100% 80%;
+transform: scaleY(1.8);
+}
+
+}
+
+
+@media screen and (min-height: 800px) {
+.rex2{
+background-color: rgb(210, 239, 43);
+}
+.rex2::after{
+content:'min-height:800px';
+}
+.resume{
+margin-top:22vh;
+margin-left:2vw;
+width:75vw;
+height:70vh;
+transform: scaleY(1) translateY(-40%)!important;
+background-size: 80% 60%;
+background-position: 0px 190%;
+}
+.resume2{
+height:60vh;
+width:30vw;
+margin-top:40vh;margin-left:60%;background-size: 100% 80%;
+transform: scaleY(1.8);
+}
+
+}
+
+@media screen and (min-width: 150px) {
+.rex{
+background-color: rgb(224, 248, 85);
+}
+.rex::after{
+content:'min 150px';
+}
+.subad2{
+grid-template-columns: repeat(2, 40%);
+row-gap: 20px;
+column-gap: 10px;
+
+}
+.webgl{
+width:120vw; display:block;transform-origin:center center;transform: scaleY(1.1) scaleX(2) translateX(-12vw);margin-left:3vw;}
+
+.item{
+margin-bottom:50vh;
+vertical-align:middle; 
+}
+.webgl{
+height:150vh;transform:scaleY(1.4)translateY(-15vh)translateX(-2vw)scaleX(1.1);overflow: visible;
+}
+
+
+
+}
+/*++++++++++++++++++++++++++++++++++++++*/
+
+@media screen and (min-width: 350px) {
+.rex{
+background-color: rgb(38, 186, 240);
+}
+.rex::after{
+content:'min 350px';
+}
+.webgl{
+width:120vw; display:block;transform-origin:center center;transform: scaleY(1.1) scaleX(2) translateX(-12vw);margin-left:3vw;}
+
+
+.grid{
+padding-top:7vh;
+padding-left:10px;
+padding-right:2px}
+.item{
+margin-bottom:0vh;
+height:900px;
+width:100vw;
+vertical-align:middle; 
+
+}
+
+
+
+}
+/*++++++++++++++++++++++++++++++++++++++*/
+@media screen and (min-width: 450px) {
+.rex{
+background-color: rgb(224, 248, 85);
+}
+.rex::after{
+content:'min 450px';
+}
+.webgl{
+height:150vh;transform:scaleY(1.4)translateY(-15vh)translateX(-2vw)scaleX(1.8);overflow: visible;
+}
+.grid{
+padding-top:4vh;
+}
+
+.resume{
+height:95vh !important;
+background-size: 90% 70%;
+background-position: 0% 120%;
+margin-left:7%;
+transform: scaleY(1.5) translateY(-30%) !important;
+}
+.resume2{
+margin-top: 47vh;
+margin-left:55%;
+width:35vw;
+height:55vh;
+}
+}
+
+/*++++++++++++++++++++++++++++++++++++++*/
+@media screen and (min-width: 550px) {
+.rex{
+background-color: rgb(226, 46, 243);
+transform: translateX(5vw);
+}
+.rex::after{
+content:'min 550px';
+}
+.webgl{
+height:150vh;transform:scaleY(1.4)translateY(-15vh)translateX(-2vw)scaleX(1.8);overflow: visible;
+}
+.grid{
+padding-top:7vh;
+}
+
+.item{
+margin-bottom:0vh;
+height:1100px;
+width:100vw;
+vertical-align:middle; 
+
+}
+
+.resume{
+background-size: 90% 70%;
+background-position: -5% 120%;
+margin-left:7%
+}
+.resume2{
+margin-top: 47vh;
+margin-left:58%;
+width:35vw;
+height:55vh;
+}
+}
+/*++++++++++++++++++++++++++++++++++++++*/
+@media screen and (min-width: 650px) {
+.rex{
+background-color: rgb(34, 25, 215);
+transform: translateX(5vw);
+}
+.webgl{
+width:140vw;
+height:150vh;transform:scaleY(1.4)translateY(-15vh)translateX(-2vw)scaleX(2);overflow: visible;
+}
+.rex::after{
+content:'min 650px';
+}
+
+
+.item{
+margin-bottom:0vh;
+height:500px;
+}
+.resume{
+background-size: 80% 70%;
+background-position: 0% 120%;
+margin-left:10%
+}
+.resume2{
+margin-top: 47vh;
+margin-left:55%;
+width:25vw;
+height:55vh;
+}
+
+}
+
+/*++++++++++++++++++++++++++++++++++++++*/
+@media screen and (min-width: 750px) {
+.rex{
+background-color: rgb(25, 106, 52);
+transform: translateX(5vw);
+}
+.rex::after{
+content:'min 750px';
+}
+.webgl{
+width:120vw; display:block;transform-origin:center center;transform: scaleY(1.5) scaleX(2) translateX(-12vw) translateY(-13vh);margin-left:3vw;}
+
+.subad2{
+grid-template-columns: repeat(4, 20%);
+}
+.resume{
+background-size: 80% 70%;
+background-position: 0% 120%;
+margin-left:10%
+}
+.resume2{
+margin-top: 47vh;
+margin-left:55%;
+width:25vw;
+height:55vh;
+}
+.item{
+height:490px;
+vertical-align:middle; 
+}
+
+
+
+}
+
+/*++++++++++++++++++++++++++++++++++++++*/
+@media screen and (min-width: 850px) {
+.rex{
+background-color: rgb(46, 243, 200);
+transform: translateY(-50vh) translateX(10vw);
+}
+.rex::after{
+content:'min 850px';
+}
+.webgl{
+height:150vh;transform:scaleY(1.4)translateY(-15vh)translateX(-2vw)scaleX(1.8);overflow: visible;
+
+}
+.grid{
+padding-top: 7vh;
+}
+.tilterymain 
+{
+overflow-x: visible;
+}
+.subad2{
+grid-template-columns: repeat(4, 20%);
+row-gap: 3vh !important
+}
+
+.item{
+height:650px;
+}
+
+
+
+}
+/*++++++++++++++++++++++++++++++++++++++*/
+
+@media screen and (min-width: 950px) {
+.rex{
+background-color: rgb(174, 128, 249);
+transform: translateY(-50vh) translateX(10vw);
+}
+.rex::after{
+content:'min 950px';
+}
+.webgl{
+height:150vh;transform:scaleY(1.4)translateY(-15vh)translateX(-3vw)scaleX(1.9);overflow: visible;
+
+}
+.grid{
+padding-top: 5vh;
+}
+.tilterymain 
+{
+overflow-x: visible;
+}
+.subad2{
+grid-template-columns: repeat(4, 20%);
+row-gap: 3vh !important
+}
+
+.item{
+height:650px;
+
+
+}
+
+}
+/*++++++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (min-width: 1050px) {
+.rex{
+background-color: rgb(252, 190, 81);
+transform: translateY(-50vh) translateX(10vw);
+}
+.rex::after{
+content:'min 1050px';
+}
+
+.grid{
+padding-top: 5vh;
+}
+
+.webgl{
+height:150vh;transform:scaleY(1.4)translateY(-15vh)translateX(-3vw)scaleX(1.9);overflow: visible;
+
+}
+.item{
+height:700px;
+width:100vw;
+
+}
+.resume{
+background-size: 70% 70%;
+background-position: 0% 120%;
+margin-left:17% !important;
+}
+.resume2{
+margin-top: 47vh;
+margin-left:58%;
+width:25vw;
+height:55vh;
+}
+}
+/*++++++++++++++++++++++++++++++++++++++*/
+@media screen and (min-width: 1150px) {
+.rex{
+background-color: rgb(55, 32, 224);
+transform: translateY(-50vh) translateX(10vw);
+}
+.rex::after{
+content:'min 1150px';
+}
+.webgl{
+height:150vh;transform:scaleY(1.4)translateY(-15vh)translateX(-3vw)scaleX(1.9);overflow: visible;
+
+}
+.grid{
+padding-top: 5vh;
+}
+
+.subad2{
+grid-template-columns: repeat(4, 18%);
+row-gap: 3vh !important;
+transform:translateX(-2%)
+
+}
+
+.item{
+height:700px;
+width:100vw;
+
+}
+.resume{
+background-size: 70% 70%;
+background-position: 0% 120%;
+margin-left:17% !important;
+}
+.resume2{
+margin-top: 47vh;
+margin-left:58%;
+width:25vw;
+height:55vh;
+}
+}
+/*++++++++++++++++++++++++++++++++++++++*/
+@media screen and (min-width: 1250px) {
+.rex{
+background-color: rgb(30, 130, 30);
+transform: translateY(-50vh) translateX(10vw);
+}
+.rex::after{
+content:'min 1250px';
+}
+.webgl{
+height:150vh;transform:scaleY(1.4)translateY(-15vh)translateX(-3vw)scaleX(1.9);overflow: visible;
+
+}
+.grid{
+padding-top: 5vh;
+padding-bottom:200vh;
+}
+
+
+.item{
+height:700px;
+width:100vw;
+
+}
+.resume{
+background-size: 70% 70%;
+background-position: 0% 120%;
+margin-left:17% !important;
+}
+.resume2{
+margin-top: 47vh;
+margin-left:58%;
+width:25vw;
+height:55vh;
+}
+}
+/*++++++++++++++++++++++++++++++++++++++*/
+@media screen and (min-width: 1350px) {
+.rex{
+background-color: rgb(219, 199, 21);
+transform: translateY(-50vh) translateX(10vw);
+}
+.rex::after{
+content:'min 1350px';
+}
+
+.webgl{
+height:150vh;transform:scaleY(1.4)translateY(-15vh)translateX(-3vw)scaleX(2.1);overflow: visible;
+
+}
+
+.grid{
+padding-top: 5vh;
+padding-bottom:200vh;
+}
+
+.subad2{
+grid-template-columns: repeat(4, 18%);
+row-gap: 3vh !important;
+transform:translateX(-2%)
+
+}
+
+.item{
+height:700px;
+width:100vw;
+
+}
+
+.resume{
+width:70vw !important;
+background-size: 60% 70%;
+background-position: 0% 120%;
+margin-left:22% !important;
+}
+.resume2{
+margin-top: 42vh;
+margin-left:48%;
+width:20vw;
+height:57vh;
+}
+}
+
+
+@media screen and (min-width: 1550px) {
+.rex{
+background-color: rgb(219, 21, 156);
+transform: translateY(-60vh) translateX(10vw);
+}
+.rex::after{
+content:'min 1550px';
+}
+
+.webgl{
+height:150vh;transform:scaleY(1.4)translateY(-15vh)translateX(-3vw)scaleX(1.75);overflow: visible;
+
+}
+
+.grid{
+padding-top: 5vh;
+padding-bottom:200vh;
+}
+
+.subad2{
+grid-template-columns: repeat(4, 18%);
+row-gap: 3vh !important;
+transform:translateX(-2%)
+
+}
+
+.item{
+height:700px;
+width:100vw;
+
+}
+.resume{
+background-size: 80% 70%;
+background-position: 0% 120%;
+margin-left:10%
+}
+.resume2{
+margin-top: 47vh;
+margin-left:65%;
+width:25vw;
+height:55vh;
+}
+}
+/*++++++++++++++++++++++++++++++++++++++*/
+
+</style>
+
+⁡⁢⁣⁢<!--MAIN CSS-->
+⁡
+<style>
+* { box-sizing: border-box; 
+pointer-events: none;
+vertical-align:middle; 
+margin:0;}
+
+html {
+--scrollbarBG: #cfd8dc00;
+--thumbBG: #90a4ae00;
+overflow: scroll;
+margin:0;
+pointer-events: none;
+box-sizing: border-box;
+}   
+html::-webkit-scrollbar {
+width: 0.1px;
+pointer-events: none;
+}
+body::-webkit-scrollbar {
+width: 0.1px;
+pointer-events: none;
+display:none;
+}
+body {
+font-family: sans-serif;
+width:100vw;
+height:100v;
+margin:0;
+padding:0;
+position: fixed;
+pointer-events: none;
+background-color: black;
+}
+
+.webgl{
+height:110vh;
+display:block;
+position:fixed;
+pointer-events: none;
+}
+.scroller{
+height:1400vh;
+position: absolute;
+overflow: scroll;
+width:100vw;
+margin-top:-1vh;
+z-index: 99;
+vertical-align:middle; 
+pointer-events: none;
+}
+.scroller::-webkit-scrollbar {
+width: 0.01px;
+pointer-events: none;
+background-color: transparent;
+display:none;
+height:0.001px;
+--scrollbarBG: #cfd8dc00;
+--thumbBG: #90a4ae00;
+}
+.scroller::-webkit-scrollbar-track {
+width: 0.01px;
+pointer-events: none;
+background-color: transparent;
+display:none;
+height:0.001px;
+--scrollbarBG: #cfd8dc00;
+--thumbBG: #90a4ae00;
+}
+.scroller::-webkit-scrollbar-track-piece {
+width: 0.01px;
+pointer-events: none;
+background-color: transparent;
+display:none;
+height:0.001px;
+--scrollbarBG: #cfd8dc00;
+--thumbBG: #90a4ae00;
+}
+
+.grid::-webkit-scrollbar-track {
+width: 0.01px;
+pointer-events: none;
+background-color: transparent;
+display:none;
+height:0.001px;
+--scrollbarBG: #cfd8dc00;
+--thumbBG: #90a4ae00;
+}
+.grid::-webkit-scrollbar-track-piece {
+width: 0.01px;
+pointer-events: none;
+background-color: transparent;
+display:none;
+height:0.001px;
+--scrollbarBG: #cfd8dc00;
+--thumbBG: #90a4ae00;
+}
+.grid {
+height:120vh;
+overflow: scroll;
+width:100vw;
+margin:0px;
+vertical-align:middle; 
+opacity:1;
+z-index: 99;
+pointer-events:none;
+padding-bottom:300vh;/*stops stuttering*/
+padding-left:0.8%;
+margin-top:-2vh;
+transform-origin: 50vw 50vh;
+border:2px solid rgba(0, 0, 255, 0);
+transform-style: preserve-3d;
+
+}
+.grid::-webkit-scrollbar{
+background-color: transparent;
+display:none;
+--scrollbarBG: #cfd8dc00;
+--thumbBG: #90a4ae00;
+height:0.001px;
+}
+.tilterymain {
+pointer-events: all;
+overflow-x: hidden;
+width:100vw;
+vertical-align:middle; 
+margin:0px;
+
+}
+.tilterymain::-webkit-scrollbar-track {
+width: 0.01px;
+pointer-events: none;
+background-color: transparent;
+display:none;
+height:0.001px;
+--scrollbarBG: #cfd8dc00;
+--thumbBG: #90a4ae00;
+}
+.grid::-webkit-scrollbar-track-piece {
+width: 0.01px;
+pointer-events: none;
+background-color: transparent;
+display:none;
+height:0.001px;
+--scrollbarBG: #cfd8dc00;
+--thumbBG: #90a4ae00;
+}
+.tilterymain::-webkit-scrollbar{
+width: 0.01px;
+pointer-events: none;
+background-color: transparent;
+
+height:0.001px;
+--scrollbarBG: #cfd8dc00;
+--thumbBG: #90a4ae00;
+}
+.grid-sizer{
+height:100%;
+background-color: transparent;
+pointer-events: none;
+vertical-align:middle; 
+}
+
+
+.grid:after {
+display: block;
+clear: both;
+pointer-events: none;
+
+}
+
+
+.resume{
+z-index: 999999;display:block; position:absolute; opacity:1; width:95vw;
+height:100vh;background-image: url(olly-header.png);background-repeat: no-repeat;overflow: scroll;
+}
+.resume::-webkit-scrollbar-track {
+width: 0.01px;
+pointer-events: none;
+background-color: transparent;
+display:none;
+height:0.001px;
+--scrollbarBG: #cfd8dc00;
+--thumbBG: #90a4ae00;
+}
+.resume::-webkit-scrollbar{
+background-color: transparent;
+display:none;
+--scrollbarBG: #cfd8dc00;
+--thumbBG: #90a4ae00;
+height:0.001px;
+}
+.resume2{
+z-index: 999999;display:block; position:absolute; opacity:1; background-image: url(olly-contact.png);background-repeat: no-repeat;
+}
+</style>
+
+<!--?======================================================================-->
+</head>
+
+<body >
+
+<canvas class="webgl" ></canvas>
+
+<!--
+<div class="rex" style="position:absolute; z-index: 99999999999;width:100px; height:100px;margin-top:40%"></div>
+<div class="rex2" style="position:absolute; z-index: 99999999999;width:100px; height:100px;margin-left:30%"></div>-->
+
+<div class="grid tilterymain" >
+
+<div class="scroller" style="pointer-events: all;margin-top:-12vh">
+<div class="grid-sizer" style="pointer-events: none;">
+
+<div class="resume shade" ></div>
+
+<div class="resume2 shade"></div></div>
+
+
+
+<div></div>
+
+
+<!--?======================================================================-->
+</div><!--scroller-->
+
+
+
+
+</div><!--grid tilterymain-->
+
+
+<!--  ~=========================================  -->
+<!--  ~===== ===== SCRIPTS  ========   ======== ====== =========  -->
+
+
+<!--lilt ___compensates diff over screen-size-->
+<script>
+const tiltElement = document.querySelector('.grid');
+
+document.addEventListener('mousemove', (e) => {
+const tiltContainer = document.querySelector('.tilt-container');
+const containerWidth = tiltContainer.offsetWidth;
+const containerHeight = tiltContainer.offsetHeight;
+const centerX = containerWidth / 2;
+const centerY = containerHeight / 2;
+const mouseX = e.clientX;
+const mouseY = e.clientY;
+const screenWidth = window.innerWidth; 
+const angleX = (centerY - mouseY) / centerY * 10; 
+let angleY;
+if (screenWidth > 1350) {
+angleY = (mouseX - centerX) / centerX * 5;
+} else {
+angleY = (mouseX - centerX) / centerX * 3;
+}
+tiltElement.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg)`;
+});
+
+
+
+</script>
+
+
+
+
+
+<script src="./js/321jquery.min.js"></script>
+
+
+<!--^shine item ad subad-->
+<script>
+var $body = $('body');
+var WIDTH = $body.width();
+var HEIGHT = $body.height();
+var $light = $body.find('.light');
+var $layer1 = $body.find('.layer-1');
+var $layer2 = $body.find('.layer-2');
+var $layer3 = $body.find('.layer-3');
+var $subad = $body.find('.subad');
+
+
+
+
+function moveAd(e) {
+var xPer = e.clientX / WIDTH;
+var yPer = e.clientY / HEIGHT;
+var zPer = e.clientZ;
+
+var rotateX = 5 - (yPer * 10);
+var rotateY = -5 + (xPer * 10);
+var translateZ = 5 + (zPer * 10);
+
+$body.css({pointerEvents: 'none',
+transform: 'tranlateZ(' + translateZ + 'deg)  (translateX * 2)',
+});
+
+var translateX = -15 + (xPer * 10);
+var translateY = -5 + (yPer * 10);
+
+$layer2.css({
+transform: 'scale(1) translateX(' + translateX + 'px) translateY(' + translateY + 'px)'
+});
+$body.css({
+transform: 'translateX(' + translateX + 'px) translateY(' + translateY + 'px)'
+});
+$layer3.css({
+transform: 'scale(1) translateX(' + (translateX * 2) + 'px) translateY(' + (translateY * 2) + 'px)'
+});
+$subad.css({
+
+opacity: '1'
+});
+var lightX = 800 - (xPer * 1600);
+var lightY = 360 - (yPer * 600);
+
+$light.css({
+transform: 'translateX(' + lightX + 'px) translateY(' + lightY + 'px)',
+});
+}
+
+$body.on('mousemove', moveAd);
+</script>
+
+<!--3D GLTF DESK BUBBLING MOUSETRACK-->
+<script src='js/js2/three.min.js'></script>
+
+<script type="module" src="./script3.js"></script>
+
+⁡⁣⁢⁣<!--^SHADOWS-->⁡⁡
+<script>
+(function () {
+
+'use strict';
+
+var spotAreaElem,
+spotIndicatorElem,
+spotShadowElem,
+spotRotateElem;
+
+function getSpotElems() {
+spotAreaElem = document.getElementsByClassName("spot-area");
+spotShadowElem = document.getElementsByClassName("shade");
+spotRotateElem = document.getElementsByClassName("spot-rotate");
+spotIndicatorElem = document.getElementsByClassName("spot-indicator");
+}
+
+getSpotElems();
+
+var indicatorOverlays = document.getElementsByClassName("spot-indicator-overlay"),
+spotShadowInstance = [],
+spotRotateInstance = [],
+spotIndicatorInstance = [],
+shadowDist = [],
+indicator = [],
+scrollTimer = null,
+elems = {
+spotShadow: spotShadowElem,
+spotRotate: spotRotateElem,
+spotIndicator: spotIndicatorElem,
+spotArea: spotAreaElem
+},
+i;
+var spotFPS = 40,
+shadowBlur = 45;
+
+var mouseX,
+mouseY;
+function getMousePosition(event) {
+mouseX = event.clientX;
+mouseY = event.clientY;
+}
+function throttle(delay, callback) {
+var previousCall = new Date().getTime();
+return function () {
+var time = new Date().getTime();
+if ((time - previousCall) >= delay) {
+previousCall = time;
+callback.apply(null, arguments);
+}
+};
+}
+function SpotInstance(elem) {
+this.elem = elem;
+this.elemX = elem.getBoundingClientRect().left + (elem.offsetWidth / 2);
+this.elemY = elem.getBoundingClientRect().top + (elem.offsetHeight / 2);
+this.getRadians = function () {
+var rad = Math.atan2(this.elemY - mouseY, mouseX - this.elemX);
+return rad;
+};
+this.getAngle = function () {
+var angle = -Math.round(this.getRadians() * 1800 / Math.PI) / 100;
+if (angle < 0) {
+angle += 360;
+}
+return angle;
+};
+this.getDistance = function () {
+var dist = Math.round(Math.sqrt(Math.pow(mouseX - this.elemX, 2) + Math.pow(this.elemY - mouseY, 2)));
+return dist;
+};
+}
+function createSpotInstances() {
+for (i = 0; i < elems.spotIndicator.length; i += 1) {
+spotIndicatorInstance[i] = new SpotInstance(elems.spotIndicator[i]);
+}
+for (i = 0; i < elems.spotShadow.length; i += 1) {
+spotShadowInstance[i] = new SpotInstance(elems.spotShadow[i]);
+}
+for (i = 0; i < elems.spotRotate.length; i += 1) {
+spotRotateInstance[i] = new SpotInstance(elems.spotRotate[i]);
+}
+for (i = 0; i < spotIndicatorInstance.length; i += 1) {
+indicator[i] = document.createElement("div");
+indicator[i].className = "spot-indicator-overlay";
+indicator[i].style.cssText = "display:table; position:absolute; pointer-events:none;" + (window.scrollX + spotIndicatorInstance[i].elem.getBoundingClientRect().left) + "px; top:" + (window.scrollY + spotIndicatorInstance[i].elem.getBoundingClientRect().top) + "px; height:" + spotIndicatorInstance[i].elem.offsetHeight + "px; width:" + spotIndicatorInstance[i].elem.offsetWidth + "px;  outline:15px solid rgba(0,200,0,0.3); outline-offset:-15px; background:rgba(0,0,0,0.2);pointer-events:none; "
+document.body.appendChild(indicator[i]);
+}
+}
+function initiateSpotEffects(event) {
+getMousePosition(event);
+for (i = 0; i < spotShadowInstance.length; i += 1) {
+shadowDist[i] = Math.round(spotShadowInstance[i].getDistance() / shadowBlur);
+if (spotShadowInstance[i].getDistance() > 10) {
+spotShadowInstance[i].elem.style.webkitFilter = "drop-shadow(" + shadowDist[i] * -Math.round(Math.cos(spotShadowInstance[i].getRadians()) * 10) / 16 + "px " + shadowDist[i] * Math.round(Math.sin(spotShadowInstance[i].getRadians()) * 10) / 15 + "px " + shadowDist[i] + "px rgba(0,0,0,0.8);pointer-events:none";
+spotShadowInstance[i].elem.style.filter = "drop-shadow(" + shadowDist[i] * -Math.round(Math.cos(spotShadowInstance[i].getRadians()) * 10) / 10 + "px " + shadowDist[i] * Math.round(Math.sin(spotShadowInstance[i].getRadians()) * 10) / 5 + "px " + shadowDist[i] + "px rgba(0,0,0,0.8))";
+} else {
+spotShadowInstance[i].elem.style.webkitFilter = "none";
+spotShadowInstance[i].elem.style.filter = "none";
+
+}
+}
+for (i = 0; i < spotRotateInstance.length; i += 1) {
+spotRotateInstance[i].elem.style.transform = "rotate(" + spotRotateInstance[i].getAngle() + "deg)";
+}
+}
+function updateIndicatorInfo() {
+for (i = 0; i < spotIndicatorInstance.length; i += 1) {
+indicator[i].innerHTML = spotIndicatorInstance[i].getDistance() + "px " + spotIndicatorInstance[i].getAngle() + "º";
+}
+}
+function clearAllEffects() {
+for (i = 0; i < spotShadowInstance.length; i += 1) {
+spotShadowInstance[i].elem.style.filter = "none";
+spotShadowInstance[i].elem.style.pointerEvents= "none";
+spotShadowInstance[i].elem.style.webkitFilter = "none";
+}
+for (i = 0; i < spotRotateInstance.length; i += 1) {
+spotRotateInstance[i].elem.style.transform = "rotate(360deg);";
+}
+while (indicatorOverlays[0]) {
+indicatorOverlays[0].parentNode.removeChild(indicatorOverlays[0]);
+}
+}
+if (elems.spotArea[0]) {
+for (i = 0; i < elems.spotArea.length; i += 2) {
+elems.spotArea[i].onmousemove = throttle(1000 / spotFPS, function (event) {
+initiateSpotEffects(event);
+updateIndicatorInfo();
+});
+}
+} else {
+window.onmousemove = throttle(1000 / spotFPS, function (event) {
+initiateSpotEffects(event);
+updateIndicatorInfo();
+});
+}
+
+window.onload = function () {
+createSpotInstances();
+};
+
+window.onresize = function () {
+clearAllEffects();
+createSpotInstances();
+};
+
+window.onscroll = function () {
+if (scrollTimer !== null) {
+clearTimeout(scrollTimer);
+}
+scrollTimer = setTimeout(function () {
+clearAllEffects();
+createSpotInstances();
+}, 50);
+};
+
+function killSpot() {
+spotIndicatorInstance = [];
+spotShadowInstance = [];
+spotRotateInstance = [];
+}
+
+var innerCircle = document.getElementById("circle1"),
+outerCircle = document.getElementById("circle2");
+
+var innerShadow = document.getElementById("innershadow"),
+innerRotation = document.getElementById("innerrotation"),
+innerIndicator = document.getElementById("innerindicator"),
+outerShadow = document.getElementById("outershadow"),
+outerRotation = document.getElementById("outerrotation"),
+outerIndicator = document.getElementById("outerindicator"),
+shadowBlurControl = document.getElementById("shadowblur");
+
+shadowBlurControl.onchange = function() {
+shadowBlur = shadowBlurControl.value;
+}
+
+innerShadow.checked = true;
+outerShadow.checked = true;
+
+innerIndicator.onchange = function() {
+if (innerIndicator.checked) {
+innerCircle.classList.add("spot-indicator");
+} else {
+innerCircle.classList.remove("spot-indicator");
+}
+getSpotElems();
+clearAllEffects();
+killSpot();
+createSpotInstances();
+};
+
+outerIndicator.onchange = function() {
+if (outerIndicator.checked) {
+outerCircle.classList.add("spot-indicator");
+} else {
+outerCircle.classList.remove("spot-indicator");
+}
+getSpotElems();
+clearAllEffects();
+killSpot();
+createSpotInstances();
+};
+
+innerShadow.onchange = function() {
+clearAllEffects();
+killSpot();
+if (innerShadow.checked) {
+innerCircle.classList.add("shade");
+innerCircle.classList.remove("spot-rotate");
+}
+getSpotElems();
+createSpotInstances();
+};
+
+innerRotation.onchange = function() {
+clearAllEffects();
+killSpot();
+if (innerRotation.checked) {
+innerCircle.classList.add("spot-rotate");
+innerCircle.classList.remove("shade");
+}
+getSpotElems();
+createSpotInstances();
+};
+
+outerShadow.onchange = function() {
+clearAllEffects();
+killSpot();
+if (outerShadow.checked) {
+outerCircle.classList.add("shade");
+outerCircle.classList.remove("spot-rotate");
+}
+getSpotElems();
+createSpotInstances();
+};
+
+outerRotation.onchange = function() {
+clearAllEffects();
+killSpot();
+if (outerRotation.checked) {
+outerCircle.classList.add("spot-rotate");
+outerCircle.classList.remove("shade");
+}
+getSpotElems();
+createSpotInstances();
+};
+
+}());
+</script>
+
+
+</body>
+</html>
